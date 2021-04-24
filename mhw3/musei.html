@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Musei</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&family=Kiwi+Maru&family=Noto+Sans+JP&family=Work+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
+    <link href="common.css" rel="stylesheet">
+    <link href="musei.css" rel="stylesheet">
+    <script src="common.js" defer></script>
+    <script src="contents.js" defer></script>
+    <script src="weather_api.js" defer></script>
+    <script src="bing_maps_apis.js" defer></script>
+    <script src="musei.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Musei italiani</h1>
+    </header>
+    <nav>
+      <a id='firstChildNav' href='home.html'>Home</a>
+      <a>Chi siamo</a>
+      <a>News</a>
+      <a>Musei</a>
+      <a>Trova un'opera</a>
+      <a>Area personale</a>
+      <a id='lastChildNav'>Contattaci</a>
+    </nav>
+    <div id='content'>
+        <div id='favourites'>
+            <h1>Preferiti:</h1>
+            <div class="flex">  
+            </div>
+        </div>
+        <div id='museumsList'>
+            <h1>Elenco musei:</h1>
+            <input type="text" placeholder="Cerca il nome di un museo"></input>
+            <div class='flex'>
+            </div>
+        </div>
+    </div>
+    <footer>
+      <p>Powered by <strong>Leonardo Messina</strong> O46002290 <br/>
+        Viale della Libertà 3, 00118 Roma
+      </p>
+    </footer>
+    <article id="mapModal" class="modal hidden">
+      <div class="container">
+          <h1></h1>
+          <img src=""/>
+          <p></p>
+          <div class="exitButton"></div>
+      </div>
+		</article>
+    <article id="mapModalError" class="modal error hidden">
+      <div class="container">
+          <h1>Errore: impossibile caricare la mappa.</h1>
+          <h2></h2>
+      </div>
+		</article>
+  </body>
+</html>
